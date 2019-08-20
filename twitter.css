@@ -25,6 +25,8 @@ p {
 }
 
 body > header {
+    display: grid;
+    place-items: center center;
     position: fixed;
     top: 0;
     left: 0;
@@ -35,6 +37,9 @@ body > header {
 }
 
 body > main {
+    display: grid;
+    grid-template-columns: 85vw;
+    justify-content: center;
     width: 100%;
     padding: 10px;
     margin-top: 46px;
@@ -43,4 +48,24 @@ body > main {
 .tile {
     padding: 10px 12px;
     background: #FFF;
+}
+
+#profile-tile {
+    display: none;
+}
+
+#trending-tile {
+    display: none;
+}
+
+#notice-tile {
+    display: none;
+}
+
+#follow-tile {
+    display: none;
+}
+
+#links-tile {
+    display: none;
 }
